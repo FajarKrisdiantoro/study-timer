@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer</title>
+    <script src="assets/js/script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #A8E7E2, #FFBCBC);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffffaa;
+            padding: 20px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #444;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .button {
+            background-color: #FFBCBC;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #FF8C8C;
+        }
+
+        .restart-btn {
+            background-color: #A8E7E2;
+        }
+
+        .restart-btn:hover {
+            background-color: #76C7C0;
+        }
+
+        .time-display {
+            margin-top: 15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #A8E7E2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Study Timer</h1>
+        <div class="button-group">
+            <button class="button" id="startBtn">Start Studying</button>
+            <button class="button" id="stopBtn">Stop</button>
+            <button class="button restart-btn" id="restartBtn">Restart</button>
+        </div>
+        <div class="time-display" id="timeDisplay">00:50:00</div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Study Timer. Crafted with ❤️ by <a href="#">FajarDev</a>.</p>
+    </footer>
+</body>
+</html>
