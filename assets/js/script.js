@@ -1,5 +1,5 @@
 let timerInterval;
-let totalSeconds = 3500; // Start at 50 minutes for testing
+let totalSeconds = 0; // Start at 50 minutes for testing
 const startButton = document.getElementById('startBtn');
 const stopButton = document.getElementById('stopBtn');
 const restartButton = document.getElementById('restartBtn');
